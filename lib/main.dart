@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:audioplayers/audio_cache.dart';
 
 void main(){
   runApp(MainScaffold());
@@ -16,7 +17,14 @@ class MainScaffold extends StatelessWidget {
         ),
         body: Center(
           child: Row(children: <Widget>[
-            Text('This is body text')
+            Text('This is body text for demo'),
+            FlatButton(
+              child: Text('play'),
+              onPressed: () {
+                AudioCache player = new AudioCache();
+                 player.play('note1.wav');
+              },
+            )
           ],),
         ),
       ),

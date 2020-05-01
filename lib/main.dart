@@ -16,7 +16,7 @@ class MainScaffold extends StatelessWidget {
         ),
         body: Center(
           child: Row(children: <Widget>[
-            Text('This is body')
+            Text('This is body text')
           ],),
         ),
       ),

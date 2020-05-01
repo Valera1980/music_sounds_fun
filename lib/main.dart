@@ -12,7 +12,7 @@ class MainScaffold extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blue,
         appBar: AppBar(
-          title: Text('App bar'),
+          title: Text('Music application'),
         ),
         body: Center(
           child: Row(children: <Widget>[
